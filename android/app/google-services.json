@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "984019384463",
+    "project_id": "canteen-management-syste-3dfac",
+    "storage_bucket": "canteen-management-syste-3dfac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984019384463:android:486b24fa9dbc10ee5298fa",
+        "android_client_info": {
+          "package_name": "com.canteenmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984019384463-f49g5mb8aimtvgqgbure6pe9so4ctae2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.canteenmanagementsystem",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "984019384463-b5mag34mubclpc8fthv6qdc3dmgouk9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2g3lueq6oR-Z8CQuf0Q4cjWAJTN20MRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984019384463-b5mag34mubclpc8fthv6qdc3dmgouk9c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
