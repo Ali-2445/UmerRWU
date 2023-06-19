@@ -6,11 +6,11 @@ import {
   TouchableOpacity,
   Alert,
 } from 'react-native';
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import firestore from '@react-native-firebase/firestore';
 import uuid from 'react-native-uuid';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-const AddNewAddress = ({ navigation }) => {
+const AddNewAddress = ({navigation}) => {
   const [street, setStreet] = useState('');
   const [city, setCity] = useState('');
   const [pincode, setPincode] = useState('');
@@ -65,7 +65,7 @@ const AddNewAddress = ({ navigation }) => {
         style={styles.inputStyle}
         placeholder={'Enter Contact '}
         value={mobile}
-        maxLength={10}
+        maxLength={11}
         keyboardType="number-pad"
         placeholderTextColor={'grey'}
         onChangeText={txt => setMobile(txt)}
@@ -75,10 +75,16 @@ const AddNewAddress = ({ navigation }) => {
         onPress={() => {
           //   navigation.navigate('AddNewAddress');
           //   saveAddress();
-          street == '' || city == '' || pincode == '' || mobile == '' ? alert('add full address') :
-            navigation.navigate('Checkout', {
-              address: { street: street, city: city, pincode: pincode, mobile: mobile }
-            })
+          street == '' || city == '' || pincode == '' || mobile == ''
+            ? alert('add full address')
+            : navigation.navigate('Checkout', {
+                address: {
+                  street: street,
+                  city: city,
+                  pincode: pincode,
+                  mobile: mobile,
+                },
+              });
         }}>
         <Text style={styles.btnText}>Save Address</Text>
       </TouchableOpacity>
